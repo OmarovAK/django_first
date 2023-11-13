@@ -1,0 +1,15 @@
+{%  extends 'first_app/base.html' %}
+
+{% block content %}
+<h1>Список элементов директории</h1>
+
+<ul class="list-group">
+    {% for elem in list_ %}
+    <li class="list-group-item">{{forloop.counter}}. {{elem}}</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'home' %}">Главная страница</a>
+
+{% endblock content %}
+

@@ -1,0 +1,14 @@
+{%  extends 'first_app/base.html' %}
+
+{% block content %}
+<h1>Список страниц</h1>
+
+<ul>
+    <li style="list-style-type:none"><a href="{% url 'current_time' %}">Страница с временем</a></li>
+    <li style="list-style-type:none"><a href="{% url 'work_dir' %}">Список элементов директории</a></li>
+</ul>
+
+
+
+{% endblock content %}
+
