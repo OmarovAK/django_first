@@ -13,7 +13,6 @@ def current_time(request):
 
 
 def first_page(request):
-
     my_dict = {
         'title': 'Страница со временем',
 
